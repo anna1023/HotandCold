@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hot and Cold</title>
+</head>
+<body onload = "generate()">
+    <div class = background>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Hot and Cold</h1>
+    <p id = "remain">Guess Remaining: 5</p>
+    <p id = "current">Current Number: 50</p>
+    <Button onclick = "numbers(1)">1</Button>
+    <Button onclick = "numbers(5)">5</Button>
+    <Button onclick = "numbers(10)">10</Button>
+    <Button onclick = "numbers(15)">15</Button>
+    <Button onclick = "numbers(25)">25</Button>
+    <Button id = "addition", onclick = "addButton()">ADD:ON</Button>
+    <Button onclick = "submit()">Commit</Button>
+    <Button onclick = "reset()">Reset</Button>
+    <h2>Logs</h2>
+    <div id = "log">
+    </div>
+    <script src = "main.js"></script>
+</div>
+</body>
+</html>
