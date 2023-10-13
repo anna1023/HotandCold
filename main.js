@@ -51,6 +51,7 @@ function reset(){
 function submit(){
     let newLog = document.createElement("p");
     let text;
+    let random = Math.random();
     if (guessLeft == 0){
         alert("You lose! The correct number is "+answer+".");
         return '';
@@ -58,6 +59,10 @@ function submit(){
     if (Math.abs(answer-currentGuess)==0){
         text = document.createTextNode("You win");
         alert("Congratulations, you win!");
+    }
+    if (random >= 0.05){
+        guessLeft++;
+        text = document.createTextNode("It's um very hot or maybe it's too cold.");
     }
     else if(Math.abs(answer-currentGuess)<=5){
         guessLeft++;
